@@ -5,43 +5,6 @@
                 "parameters": { "basic.simultaneous_threshold_milliseconds": 0 },
                 "rules": [
                     {
-                        "description": "Left Control + Left Command + mouse button4/5 to switch macOS spaces",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "mandatory": ["left_control", "left_command"],
-                                        "optional": ["any"]
-                                    },
-                                    "pointing_button": "button4"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_control", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "mandatory": ["left_control", "left_command"],
-                                        "optional": ["any"]
-                                    },
-                                    "pointing_button": "button5"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_control", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ctrl + Delete => Delete word by word",
                         "manipulators": [
                             {
@@ -3075,7 +3038,6 @@
                     "to": [{ "key_code": "left_control" }]
                 }
             ]
-        },
-        { "name": "mac-original" }
+        }
     ]
 }
